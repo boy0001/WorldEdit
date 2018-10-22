@@ -362,6 +362,7 @@ public class Fawe {
         MainUtil.copyFile(MainUtil.getJarFile(), "es/commands.yml", null);
         MainUtil.copyFile(MainUtil.getJarFile(), "nl/message.yml", null);
         MainUtil.copyFile(MainUtil.getJarFile(), "fr/message.yml", null);
+        MainUtil.copyFile(MainUtil.getJarFile(), "cn/message.yml", null);
         // Setting up config.yml
         File file = new File(this.IMP.getDirectory(), "config.yml");
         Settings.IMP.PLATFORM = IMP.getPlatform().replace("\"", "");
@@ -372,8 +373,8 @@ public class Fawe {
             scanner.close();
             this.version = new FaweVersion(versionString);
             Settings.IMP.DATE = new Date(100 + version.year, version.month, version.day).toGMTString();
-            Settings.IMP.BUILD = "https://ci.athion.net/job/FastAsyncWorldEdit/" + version.build;
-            Settings.IMP.COMMIT = "https://github.com/boy0001/FastAsyncWorldedit/commit/" + Integer.toHexString(version.hash);
+            Settings.IMP.BUILD = "https://ci.athion.net/job/FAWE-1.13/" + version.build;
+            Settings.IMP.COMMIT = "https://github.com/boy0001/WorldEdit/commit/" + Integer.toHexString(version.hash);
         } catch (Throwable ignore) {}
         try {
             Settings.IMP.reload(file);
