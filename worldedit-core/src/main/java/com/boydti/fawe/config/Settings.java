@@ -325,7 +325,7 @@ public class Settings extends Config {
         public boolean ANVIL_QUEUE_MODE = false;
         @Comment({
                 "[SAFE] Dynamically increase the number of chunks rendered",
-                " - Requires Paper: ci.destroystokyo.com/job/PaperSpigot/",
+                " - Requires Paper: ci.destroystokyo.com/job/Paper-1.13/",
                 " - Set your server view distance to 1 (spigot.yml, server.properties)",
                 " - Based on tps and player movement",
                 " - Note: If entities become hidden, increase the server view distance to 3",
